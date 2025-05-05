@@ -12,6 +12,13 @@ namespace ProductosAPI.Repositories.ProductoRepository
             _context = context;
         }
 
+        public async Task<Producto?> Crear(Producto p)
+        {
+            await _context.Productos.AddAsync(p);
+            await _context.SaveChangesAsync();
+            return p;
+        }
+
         public async Task<Producto?> ObtenerPorId(int id)
         {
             return await _context.Productos.FirstOrDefaultAsync(e => e.Id == id && !e.Estado.Equals("N"));

@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "ProductosAPI.Controllers.ProductoController",
+    "Method": "Crear",
+    "RelativePath": "api/v1/productos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "save",
+        "Type": "ProductosAPI.Dtos.Productos.ProductoSaveDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductosAPI.Controllers.ProductoController",
     "Method": "ObtenerPorId",
     "RelativePath": "api/v1/productos/{id}",
     "HttpMethod": "GET",

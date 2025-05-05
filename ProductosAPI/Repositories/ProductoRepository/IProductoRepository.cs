@@ -6,5 +6,6 @@ namespace ProductosAPI.Repositories.ProductoRepository
     {
         Task<List<Producto>> ObtenerTodos();
         Task<Producto?> ObtenerPorId(int id);
+        Task<Producto?> Crear(Producto p);
     }
 }

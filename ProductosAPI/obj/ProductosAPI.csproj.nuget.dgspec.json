@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kevin\\source\\repos\\ProductosAPI\\ProductosAPI\\ProductosAPI.csproj": {}
+    "C:\\Users\\ktaffur\\source\\repos\\excepciones-centralizadas\\ProductosAPI\\ProductosAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kevin\\source\\repos\\ProductosAPI\\ProductosAPI\\ProductosAPI.csproj": {
+    "C:\\Users\\ktaffur\\source\\repos\\excepciones-centralizadas\\ProductosAPI\\ProductosAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kevin\\source\\repos\\ProductosAPI\\ProductosAPI\\ProductosAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ktaffur\\source\\repos\\excepciones-centralizadas\\ProductosAPI\\ProductosAPI.csproj",
         "projectName": "ProductosAPI",
-        "projectPath": "C:\\Users\\Kevin\\source\\repos\\ProductosAPI\\ProductosAPI\\ProductosAPI.csproj",
-        "packagesPath": "C:\\Users\\Kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kevin\\source\\repos\\ProductosAPI\\ProductosAPI\\obj\\",
+        "projectPath": "C:\\Users\\ktaffur\\source\\repos\\excepciones-centralizadas\\ProductosAPI\\ProductosAPI.csproj",
+        "packagesPath": "C:\\Users\\ktaffur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ktaffur\\source\\repos\\excepciones-centralizadas\\ProductosAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ktaffur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

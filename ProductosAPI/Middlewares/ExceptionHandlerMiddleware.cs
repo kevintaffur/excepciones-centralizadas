@@ -1,4 +1,5 @@
-﻿using ProductosAPI.Exceptions;
+﻿using System.ComponentModel.DataAnnotations;
+using ProductosAPI.Exceptions;
 using ProductosAPI.Utils;
 
 namespace ProductosAPI.Middlewares
@@ -32,6 +33,8 @@ namespace ProductosAPI.Middlewares
             var statusCode = ex switch
             {
                 ArgumentNullException => StatusCodes.Status400BadRequest,
+                ValidationException => StatusCodes.Status400BadRequest,
+                ArgumentException => StatusCodes.Status400BadRequest,
                 NoEncontradoException => StatusCodes.Status404NotFound,
                 _ => StatusCodes.Status500InternalServerError
             };

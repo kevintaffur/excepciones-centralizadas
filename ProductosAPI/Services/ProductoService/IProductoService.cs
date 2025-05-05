@@ -1,4 +1,5 @@
-﻿using ProductosAPI.Models;
+﻿using ProductosAPI.Dtos.Productos;
+using ProductosAPI.Models;
 
 namespace ProductosAPI.Services.ProductoService
 {
@@ -6,5 +7,6 @@ namespace ProductosAPI.Services.ProductoService
     {
         Task<List<Producto>> ObtenerTodos();
         Task<Producto?> ObtenerPorId(int id);
+        Task<Producto?> Crear(ProductoSaveDto producto);
     }
 }

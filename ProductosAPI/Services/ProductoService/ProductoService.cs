@@ -1,4 +1,6 @@
-﻿using ProductosAPI.Exceptions;
+﻿using System.ComponentModel.DataAnnotations;
+using ProductosAPI.Dtos.Productos;
+using ProductosAPI.Exceptions;
 using ProductosAPI.Models;
 using ProductosAPI.Repositories.ProductoRepository;
 
@@ -11,6 +13,18 @@ namespace ProductosAPI.Services.ProductoService
         public ProductoService(IProductoRepository repository)
         {
             _repository = repository;
+        }
+
+        public async Task<Producto?> Crear(ProductoSaveDto producto)
+        {
+            Validator.ValidateObject(producto, new ValidationContext(producto), true);
+            Producto save = new Producto()
+            {
+                Estado = producto.Estado,
+                Nombre = producto.Nombre
+            };
+
+            return await _repository.Crear(save);
         }
 
         public async Task<Producto?> ObtenerPorId(int id)

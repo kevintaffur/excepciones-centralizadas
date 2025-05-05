@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProductosAPI.Dtos.Productos;
 using ProductosAPI.Models;
 using ProductosAPI.Services.ProductoService;
 
@@ -28,6 +29,15 @@ namespace ProductosAPI.Controllers
             return Success(
                 await _service.ObtenerPorId(id),
                 "Producto obtenido de forma satisfactoria.");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Crear([FromBody] ProductoSaveDto save)
+        {
+            return Success(
+                await _service.Crear(save),
+                "Producto creado de forma satisfactoria.",
+                201);
         }
     }
 }
